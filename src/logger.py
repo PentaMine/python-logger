@@ -20,7 +20,7 @@ class CustomLogLevel:
 
     def log(self, message):
         log(message, self.color, self.name)
-        if self.isFatal:
+        if self.isFatal and quitWhenLogFatal:
             quit()
 
 
