@@ -6,7 +6,7 @@ a simple python logger
 * ## downloading the logger and installing required libraries
 
 1. install the colorama library
-2. download the logger and add ikt to your project
+2. download the logger and add add to your project
 3. import the logger using `import logger`
 * ## personalizing the logger
 
