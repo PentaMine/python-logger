@@ -3,7 +3,7 @@ a simple python logger
 
 # how to use
 
-* ### downloading the logger and installing required libraries
+* ## downloading the logger and installing required libraries
 
 1. install the colorama library
 2. download the logger and add ikt to your project
