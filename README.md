@@ -11,9 +11,10 @@ a simple python logger
 * ## personalizing the logger
 
 1. to toggle the logging of levels you can change the `logLevel` from true to false
-2. to color the level identifier you can switch the `colorLevelText` variable from false to true
-3. if you wish to change the default color of a level you can do that by altering the colour variables(warnColor, infoColor, debugColor, ect.) in the file
-4. the logger executes the quit() function when a fatal is logged if you wish to switch that off you can switch the **quitWhenLogFatal** variable from true to false
+2. if you want to color your output switch the `colorText` variable from false to true
+3. to color the level identifier you can switch the `colorLevelText` variable from false to true
+4. if you wish to change the default color of a level you can do that by altering the colour variables(warnColor, infoColor, debugColor, ect.) in the file
+5. the logger executes the quit() function when a fatal is logged if you wish to switch that off you can switch the `quitWhenLogFatal` variable from true to false
 
 * ## logging default levels
 
