@@ -2,19 +2,20 @@ from datetime import datetime
 from colorama import Fore
 
 
+class LogLevel:
+    def __init__(self, name, color: str = Fore.RESET, isFatal: bool = False):
+        self.name = name
+        self.color = color
+        self.isFatal = isFatal
+
+    def log(self, message):
+        logger = Logger()
+        logger.log(message, self)
+        if self.isFatal and Logger.quitWhenLogFatal:
+            quit()
+
+
 class Logger:
-    class LogLevel:
-        def __init__(self, name, color: str = Fore.RESET, isFatal: bool = False):
-            self.name = name
-            self.color = color
-            self.isFatal = isFatal
-
-        def log(self, message):
-            logger = Logger()
-            logger.log(message, self)
-            if self.isFatal and Logger.quitWhenLogFatal:
-                quit()
-
     logLevel = True
     colorLevelText = True
     quitWhenLogFatal = True
@@ -25,7 +26,6 @@ class Logger:
     errorLevel = LogLevel("ERROR", Fore.LIGHTRED_EX)
     fatalLevel = LogLevel("FATAL", Fore.RED)
 
-    # def log(self, message: str, color: str = Fore.RESET, level: LogLevel = "DEBUG", end: str = "\n"):
     def log(self, message: str, level: LogLevel = debugLevel, end: str = "\n"):
         current_time = datetime.now()
         if Logger.colorText:
