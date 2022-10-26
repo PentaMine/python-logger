@@ -7,7 +7,7 @@ dependencies = [
   "colorama >= 0.4.5"
 ]
 name = "spyl"
-version = "0.0.2"
+version = "1.0.0"
 authors = [
   { name="PentaMine", email="author@example.com" },
 ]
