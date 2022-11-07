@@ -12,11 +12,13 @@ a simple python logger
 * `colorLevelText`, default to `True` - will the level label get colored
 * `quitWhenLogFatal`, default to `False` - will the program quit when something with the fatal level is logged
 * `colorText`, default to `True` - will the message get colored
+* `prefixBeforeTime`, default to `True`, - if a prefix is set will it be displayed before the timestamp `prefix [12:00:00] [LEVEL] message` or after `[12:00:00] prefix [LEVEL] message`
 * `warnLevel`, an instance of `LogLevel`, default to `LogLevel("WARN", Fore.YELLOW)`
 * `infoLevel`, an instance of `LogLevel`, default to `LogLevel("INFO", Fore.RESET)`
 * `debugLevel`, an instance of `LogLevel`, default to `LogLevel("DEBUG", Fore.WHITE)`
 * `errorLevel`, an instance of `LogLevel`, default to `LogLevel("ERROR", Fore.LIGHTRED_EX),`
 * `fatalLevel`, an instance of `LogLevel`, default to `LogLevel("FATAL", Fore.RED, isFatal=True)`
+* `prefix`, default to `""` - the prefix of the entry that is to be logged (see the `prefixBeforeTime` parameter)
 * ## logging default levels
 
 1. import the library using `import spyl`
