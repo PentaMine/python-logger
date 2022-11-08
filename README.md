@@ -1,4 +1,6 @@
 # spyl
+[![PyPI](https://img.shields.io/pypi/v/spyl?color=red&style=flat)](https://pypi.org/project/spyl/ "pypi")
+
 a simple python logger
 
 # how to use
